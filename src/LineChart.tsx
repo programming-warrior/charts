@@ -82,19 +82,19 @@ const LineChart: React.FC = () => {
 
     },
   };
-  const lineMarker={
-    id:"lineMarker",
-    beforeDatasetsDraw:(chart:any)=>{
-      const {ctx,chartArea:{top,bottom},scales:{x}}=chart;
-      ctx.save();
-      ctx.beginPath();
-      ctx.strokeStyle="white";
-      ctx.lineWidth=1;
-      ctx.moveTo(x.getPixelForValue(2),top)
-      ctx.lineTo(x.getPixelForValue(2),bottom);
-      ctx.stroke();
-    }
-  }
+  // const lineMarker={
+  //   id:"lineMarker",
+  //   beforeDatasetsDraw:(chart:any)=>{
+  //     const {ctx,chartArea:{top,bottom},scales:{x}}=chart;
+  //     ctx.save();
+  //     ctx.beginPath();
+  //     ctx.strokeStyle="white";
+  //     ctx.lineWidth=1;
+  //     ctx.moveTo(x.getPixelForValue(2),top)
+  //     ctx.lineTo(x.getPixelForValue(2),bottom);
+  //     ctx.stroke();
+  //   }
+  // }
 
   return (
     <div className='m-4 w-48'>
