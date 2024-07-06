@@ -1,0 +1,7 @@
+/* src/ChartComponent.css */
+.chart-container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+  }
+  
