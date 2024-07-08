@@ -51,7 +51,7 @@ const LineSegmentChart = () => {
     ],
   };
 
-  const options:ChartOptions<'line'>= {
+  const options:any= {
     plugins: {
       legend: {
         display: false,
