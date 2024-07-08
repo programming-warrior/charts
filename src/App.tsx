@@ -2,6 +2,8 @@
 import './App.css'
 import LineChart from './LineChart'
 import PieChart from './PieChart'
+import LineSegmentChart from './LineSegmentChart'
+
 
 function App() {
 
@@ -9,6 +11,7 @@ function App() {
     <>
       <LineChart/>
       <PieChart/>
+      <LineSegmentChart/>
     </>
   )
 }
