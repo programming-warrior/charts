@@ -8,7 +8,7 @@ import {
   Filler,
   Tooltip,
   Legend,
-  ChartOptions,
+  // ChartOptions,
 } from "chart.js";
 
 ChartJS.register(
@@ -67,7 +67,7 @@ const LineSegmentChart = () => {
         },
         ticks: {
             autoSkip: false, 
-            callback:function(value:any,index:number):any {
+            callback:function(index:number):any {
                 return index % 2 !== 0 ? data.labels[index] : '';
               }
           },
@@ -103,8 +103,8 @@ const LineSegmentChart = () => {
 
   const verticalLinePlugin = {
     id: 'verticalLinePlugin',
-    beforeDraw: (chart:any,args:any, options:any) => {
-      const { ctx, chartArea: { left, right, top, bottom }, scales: { x } } = chart;
+    beforeDraw: (chart:any,_args:any, options:any) => {
+      const { ctx, chartArea: {  top, bottom }, scales: { x } } = chart;
       options.segmentBoundaries.forEach((boundary:any) => {
         const xPos = x.getPixelForValue(boundary);
         ctx.save();
