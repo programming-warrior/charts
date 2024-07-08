@@ -53,7 +53,7 @@ const LineChart: React.FC = () => {
     plugins:{
     
       legend:{
-        // display:false
+        display:false
       }
     },
     scales: {
@@ -98,7 +98,7 @@ const LineChart: React.FC = () => {
 
   return (
     <div className='m-4 w-48'>
-      <Line  data={data} options={options}  />
+      <Line  data={data} options={options} />
     </div>
   );
 };
